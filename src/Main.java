@@ -30,8 +30,21 @@ public class Main {
             System.out.println("====================================================");
             System.out.println("Your Current Balance is: " + money + " Silver Lions");
             System.out.println("====================================================");
-            terminal = entry.nextDouble();
+            System.out.println("Please type your input:");
+            terminal = entry.nextInt();
+            if (terminal == 1){
+                System.out.println("Your Current Balance is " + money + "Silver Lions");
+            }
+            if (terminal == 2){
+                System.out.println("Please input the value you want to insert:");
+                flow = entry.nextInt();
+                money += flow;
+                System.out.println("your operations is sucesfully done! Your new balance is" + money + "Silver Lions");
+            }
+            if (terminal == 3){
+                System.out.println("Please Input how ");
+            }
         }
-
+        System.out.println("Thank you for using DOOM bank!");
     }
 }
