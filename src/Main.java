@@ -42,7 +42,14 @@ public class Main {
                 System.out.println("your operations is sucesfully done! Your new balance is" + money + "Silver Lions");
             }
             if (terminal == 3){
-                System.out.println("Please Input how ");
+                System.out.println("Please Input how much money you want to withdraw:");
+                flow = entry.nextInt();
+                if (flow >= money){
+                    System.out.println("Cant withdraw more than you have...");
+                }else{
+                    money -= flow;
+                    System.out.println("your operations is sucesfully done! Your new balance is" + money + "Silver Lions");
+                }
             }
         }
         System.out.println("Thank you for using DOOM bank!");
